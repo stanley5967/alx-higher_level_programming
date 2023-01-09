@@ -1,14 +1,7 @@
 #!/usr/bin/python3
+""" New class Geometry module """
 
 
 class BaseGeometry:
-    """BaseGeometry empty class"""
+    """ Empty class """
     pass
-
-
-if __name__ == '__main__':
-    bg = BaseGeometry()
-
-    print(bg)
-    print(dir(bg))
-    print(dir(BaseGeometry))

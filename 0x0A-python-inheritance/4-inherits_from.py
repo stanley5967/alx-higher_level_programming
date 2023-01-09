@@ -1,15 +1,10 @@
 #!/usr/bin/python3
+""" Only sub class of """
 
 
 def inherits_from(obj, a_class):
-    """Determines if the object is an instance of a class or inherited
-    Args:
-        obj (object): object
-        a_class (class): class to compare to
-    Returns:
-        True if object is instance or inherited from class, False otherwise
+    """ function that returns True if the object is an instance
+    of a class that inherited (directly or indirectly) from the
+    specified class
     """
-    if issubclass(type(obj), a_class):
-        if type(obj) is not a_class:
-            return True
-    return False
+    return (isinstance(obj, a_class) and type(obj) != a_class)

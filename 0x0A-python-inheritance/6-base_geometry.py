@@ -1,17 +1,9 @@
 #!/usr/bin/python3
+""" New class Geometry module """
 
 
 class BaseGeometry:
-    """BaseGeometry class with area method"""
+    """ Base Geometry """
+
     def area(self):
-        """Area method not implemented"""
         raise Exception("area() is not implemented")
-
-
-if __name__ == '__main__':
-    bg = BaseGeometry()
-
-    try:
-        print(bg.area())
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
